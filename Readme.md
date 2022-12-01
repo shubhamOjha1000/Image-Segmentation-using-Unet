@@ -79,4 +79,16 @@ The decoder, or upsampling block, upsamples the features back to the original im
 ![ex1](https://user-images.githubusercontent.com/72977734/204982012-84a22db6-ae70-427a-834d-fde58813c50a.png)
 ![ex2](https://user-images.githubusercontent.com/72977734/204982025-23a3856c-326e-472b-97e8-83725bb2867d.png)
 
+![ex3](https://user-images.githubusercontent.com/72977734/204982498-d7393dc8-d4e9-41f1-b8d2-d89ad8e0e28d.png)
+
+![ex4](https://user-images.githubusercontent.com/72977734/204982517-c8992ad1-5f2e-4813-b6f8-60992d68c8b8.png)
+
+![ex5](https://user-images.githubusercontent.com/72977734/204982525-887b0309-c81d-41cb-8cf6-6362a35c50ce.png)
+
+![ex6](https://user-images.githubusercontent.com/72977734/204982537-40a9e00e-a983-4130-aea6-9aa95e247500.png)
+
+
+
+
+
 
