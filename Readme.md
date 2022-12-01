@@ -3,8 +3,8 @@
 Building U-Net, a type of CNN designed for quick, precise image segmentation, and using it to predict a label for every single pixel in an image - in this case, an image from a self-driving car dataset. 
 
 This type of image classification is called semantic image segmentation. It's similar to object detection in that both ask the question: "What objects are in this image and where in the image are those objects located?," but where object detection labels objects with bounding boxes that may include pixels that aren't part of the object, semantic image segmentation allows you to predict a precise mask for each object in the image by labeling each pixel in the image with its corresponding class. The word “semantic” here refers to what's being shown, so for example the “Car” class is indicated below by the dark blue mask, and "Person" is indicated with a red mask:
+![carseg](https://user-images.githubusercontent.com/72977734/204981328-eb4d6b89-2baa-4f95-985a-3c783b91602b.png)
 
-<img src="images/carseg.png" style="width:500px;height:250;">
 <caption><center> <u><b>Figure 1</u></b>: Example of a segmented image <br> </center></caption>
 
 ## Project Objective :-
@@ -14,7 +14,8 @@ This type of image classification is called semantic image segmentation. It's si
 
 
 ### Check out the some of the unmasked and masked images from the dataset:
-<img src="images/output.png" style="width:500px;height:250;">
+![output](https://user-images.githubusercontent.com/72977734/204981480-6125376a-aaa6-4749-aabe-2e32313307bc.png)
+
 
 ## U-Net 
 
@@ -28,7 +29,10 @@ U-Net improves on the FCN, using a somewhat similar design, but differing in som
 
 ### Model Details
 
-<img src="images/unet.png" style="width:700px;height:400;">
+<img width="887" alt="unet" src="https://user-images.githubusercontent.com/72977734/204981611-0f025a3e-3e26-4fec-a79d-970075962e95.png">
+
+
+
 <caption><center> <u><b> Figure 2 </u></b>: U-Net Architecture<br> </center></caption>
 
 **Contracting path** (Encoder containing downsampling steps):
@@ -54,17 +58,25 @@ The U-Net network has 23 convolutional layers in total.
 
 ###  Encoder (Downsampling Block) 
 
-<img src="images/encoder.png" style="width:500px;height:500;">
+
+<img width="945" alt="encoder" src="https://user-images.githubusercontent.com/72977734/204981805-91df02f3-c8fe-4ce6-aefe-b4eaef8eabc7.png">
+
+
+
 <caption><center> <u><b>Figure 3</u></b>: The U-Net Encoder up close <br> </center></caption>
 
 ### Decoder (Upsampling Block)
 
 The decoder, or upsampling block, upsamples the features back to the original image size. At each upsampling level, you'll take the output of the corresponding encoder block and concatenate it before feeding to the next decoder block.
 
-<img src="images/decoder.png" style="width:500px;height:500;">
+<img width="1091" alt="decoder" src="https://user-images.githubusercontent.com/72977734/204981907-b1b14bce-909a-43fd-bb61-6246c9d31e17.png">
+
+
 <caption><center> <u><b>Figure 4</u></b>: The U-Net Decoder up close <br> </center></caption>
 
 
 ###  Model Predictions
-<img src="images/ex1.png" style="width:500px;height:500;">
-<img src="images/ex2.png" style="width:500px;height:500;">
+![ex1](https://user-images.githubusercontent.com/72977734/204982012-84a22db6-ae70-427a-834d-fde58813c50a.png)
+![ex2](https://user-images.githubusercontent.com/72977734/204982025-23a3856c-326e-472b-97e8-83725bb2867d.png)
+
+
